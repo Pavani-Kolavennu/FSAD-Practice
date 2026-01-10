@@ -10,12 +10,18 @@ public class CourseRegistration
 	private int rollNo;
 	@Value("Pavani")
 	private String studentName;
+	
 	private String courseName;
+	
 	private int semester;
 	
-	public CourseRegistration(@Value("FSAD")String courseName,@Value("4")int semester)
+	public CourseRegistration(@Value("FSAD")String courseName)
 	{
 		this.courseName=courseName;
+	}
+	@Value("4")
+	public void SetCourseRegistration(int semester)
+	{
 		this.semester=semester;
 	}
 	public void display()
