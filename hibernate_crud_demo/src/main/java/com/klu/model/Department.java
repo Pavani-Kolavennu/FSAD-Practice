@@ -1,5 +1,5 @@
 package com.klu.model;
-import javax.persistence.*;
+import javax.persistence.*; 
 import java.util.*;
 @Entity
 @Table(name="dept")
